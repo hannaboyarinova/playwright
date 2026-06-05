@@ -27,7 +27,7 @@ test('Drag and Drop', async ({ page }) => {
     await expect(page.locator('.drop-target')).toContainText('Success');
 });
 
-test.only('Handling iframes', async ({ page }) => {
+test('Handling iframes', async ({ page }) => {
     await page.goto('file:///C:/Users/user/Documents/Playwright/tests/workshop_3/index.html');
     
     // ИСПРАВЛЕНИЕ: Целимся непосредственно в тег iframe
