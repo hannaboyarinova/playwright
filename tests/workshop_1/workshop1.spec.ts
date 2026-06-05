@@ -1,13 +1,13 @@
 import {test} from '@playwright/test';
 
-test.skip('Basic navigation', async ({page}) => {
+test('Basic navigation', async ({page}) => {
     await page.goto('http://playwright.dev/docs/writing-tests');
     await page.waitForTimeout(3000);
     await page.reload();
 
 });
 
-test.skip('Interacting with elements', async ({page}) => {
+test('Interacting with elements', async ({page}) => {
     await page.goto('https://about.gitlab.com/');
     await page.waitForTimeout(3000);
     await page.click("#onetrust-accept-btn-handler");
