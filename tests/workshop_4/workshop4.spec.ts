@@ -31,7 +31,7 @@ test('Confirm Alerts', async ({page}) => {
 
 });
 
-test.only('Handling Pop-ups', async ({page}) => {
+test('Handling Pop-ups', async ({page}) => {
     await page.goto(links.workshop4);
     const [popup] = await Promise.all([
         page.waitForEvent('popup'),
