@@ -23,7 +23,7 @@ test('Add cookies and verify', async ({ page }) => {
     await expect(sessionCookie?.value).toBe('12345');
 });
 
-test.only('Delete cookies and verify', async ({ page }) => {
+test('Delete cookies and verify', async ({ page }) => {
     await page.goto(links.workshop5_1);
 
     await page.click('#setCookie');
