@@ -8,7 +8,7 @@ const validUserData = {
     number: '123456789'
 };
 
-test.describe.only('User registration and login flow', () => {
+test.describe('User registration and login flow', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto(links.workshop6);
     });
